@@ -18,7 +18,7 @@ public class ClientThread extends Thread{
 	public void run() {
 		
 		String
-	       FILE_TO_RECEIVED = "c:/Source/source" +Math.random()+ ".pdf";
+	       FILE_TO_RECEIVED = "/home/infracom/archivos/client/" +Math.random()+ ".bin";
 		
 		int bytesRead;
 	    int current = 0;
