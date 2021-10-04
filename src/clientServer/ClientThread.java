@@ -12,7 +12,7 @@ public class ClientThread extends Thread{
 	public final static int SOCKET_PORT = 5000; 
 	public final static String SERVER = "127.0.0.1";  // localhost
 
-	public final static int FILE_SIZE = 20022386; // file size temporary hard coded
+	public final static int FILE_SIZE = 300022386; // file size temporary hard coded
 	                                               // should bigger than the file to be downloaded
 	
 	public void run() {
