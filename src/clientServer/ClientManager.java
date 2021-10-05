@@ -6,13 +6,13 @@ public class ClientManager {
 	
 	public static void main(String[] args) {
 		
-		Scanner myObj = new Scanner(System.in);  // Create a Scanner object
-	    System.out.println("Por favor ingrese el número de clientes que se desea conectar: ");
+//		Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+//	    System.out.println("Por favor ingrese el número de clientes que se desea conectar: ");
 	    
-	    int numClientes = Integer.parseInt(myObj.nextLine());  // Read user input
+//	    int numClientes = Integer.parseInt(myObj.nextLine());  // Read user input
 		
-		for(int i =0; i<numClientes; i++) {
-			Thread thread = new ClientThread();
+		for(int i =0; i<1; i++) {
+			Thread thread = new ClientThread(i+1, 1);
 			thread.run();
 		}
 		
