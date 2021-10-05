@@ -65,8 +65,8 @@ class ClientHandler extends Thread
     
 	final Socket s;
 	public final static int SOCKET_PORT = 5000;  
-	public final static String FILE_TO_SEND1 = "/home/infracom/archivos/server/100mb.bin"; 
-	public final static String FILE_TO_SEND2 = "/home/infracom/archivos/server/250mb.bin"; 
+	public final static String FILE_TO_SEND1 = "/home/infracom/archivos/server/100mb.txt"; 
+	public final static String FILE_TO_SEND2 = "/home/infracom/archivos/server/250mb.txt"; 
 	
 	final int tipoArchivo;
 	
@@ -172,7 +172,6 @@ class ClientHandler extends Thread
 	     
 	    //return complete hash
 	   return sb.toString();
-	}
-		
+	}	
 
 }
