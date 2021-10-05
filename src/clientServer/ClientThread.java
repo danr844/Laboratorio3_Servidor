@@ -16,7 +16,7 @@ import java.util.List;
 public class ClientThread extends Thread{
 
 	public final static int SOCKET_PORT = 5000; 
-	public final static String SERVER = "127.0.0.1";  // localhost
+	public final static String SERVER = "192.168.159.128";  // localhost
 
 	public final static int FILE_SIZE = 300000000; // file size temporary hard coded
 	// should bigger than the file to be downloaded
@@ -49,8 +49,9 @@ public class ClientThread extends Thread{
 
 			// Writes len bytes from the specified byte array starting at offset off to this output stream
 			InputStream is = sock.getInputStream();
+			String currentPath = new java.io.File(".").getCanonicalPath();
 
-			fos = new FileOutputStream("z://client//cliente.txt");
+			fos = new FileOutputStream(currentPath+"//archivos//archivo.txt");
 			bos = new BufferedOutputStream(fos);
 
 
