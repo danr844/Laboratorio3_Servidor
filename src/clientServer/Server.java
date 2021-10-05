@@ -86,7 +86,7 @@ class ClientHandler extends Thread
 		{
 			try {
 				
-			  File myFile = new File ("z://server//servidor.txt"); 
+			  File myFile = new File (FILE_TO_SEND1); 
 			  String aEnviar = FILE_TO_SEND1;
 			  
 			  if(tipoArchivo == 2) {
